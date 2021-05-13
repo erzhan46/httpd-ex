@@ -1,2 +1,3 @@
 RewriteEngine On
-RewriteRule ^/(.*)$ /test/$1 [R=301,NC,L]
+RewriteRule %{HTTP_HOST} !test
+RewriteRule ^/(.*)$ /test/$1 [R=301,L]
