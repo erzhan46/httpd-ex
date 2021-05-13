@@ -1,1 +1,4 @@
-RewriteRule ^old/(.*)$ /test/$1 [R=301,NC,L]
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !test
+RewriteRule ^(.*)$ %{HTTP_HOST}/test/$1 [R=301,L]
