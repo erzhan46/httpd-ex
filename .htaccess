@@ -1,1 +1,3 @@
-DirectoryIndex /test/
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !test
+RewriteRule ^(.*)$ /test/$1 [R=301,NC,L]
