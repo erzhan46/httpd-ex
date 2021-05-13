@@ -1,4 +1,5 @@
 Options +FollowSymLinks
 RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !index.html
 RewriteCond %{REQUEST_FILENAME} !test
 RewriteRule ^(.*)$ /test/$1 [R=301,L]
