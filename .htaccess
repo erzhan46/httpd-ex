@@ -1,4 +1,4 @@
 Options +FollowSymLinks
 RewriteEngine On
-RewriteCond %{HTTP_HOST} !test
+RewriteCond %{REQUEST_FILENAME} !test
 RewriteRule ^(.*)$ /test/$1 [R=301,L]
