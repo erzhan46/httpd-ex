@@ -1,1 +1,1 @@
-Redirect / /test
+Redirect 301 / /test/index.html
